@@ -1,0 +1,284 @@
+@import 
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Rubik+Iso&display=swap');
+
+header{
+  background-image: url(images/wave.jpg);
+  background-repeat: no-repeat;
+}
+body{
+  margin: 0;
+  border-top: 10px #74A2F0 solid;
+}
+h1{
+  font-family: 'Rubik Iso',sans-serif;
+  text-align: center;
+  font-size: 3em;
+  color: black;
+}
+main{
+  max-width: 1000px;
+  margin: 20px auto;
+}
+nav a:link{
+  color: white;
+}
+nav a:visited{
+  color: blue;
+}
+nav a:hover{
+  color:red;
+}
+nav a:active{
+  color: orange;
+}
+nav{
+  font-family: 'Rubik Iso', sans-serif;
+  background-color: lightskyblue;
+  border-top: 2px black solid;
+  border-bottom: 2px black solid;
+  padding-right: 5px;
+  padding-top: 10px;
+  font-weight: bold;
+}
+nav ul{
+  list-style-type: none;
+  text-align: center;
+}
+nav li{
+  display: inline;
+}
+nav a{
+  text-decoration: none;
+  padding-right: 10px;
+}
+footer{
+  text-align: center;
+  border-top: 1px solid black;
+  margin-top: 90px;
+  background-color: lightskyblue;
+}
+footer .fa{
+  color: black;
+}
+footer .fa:hover{
+  opacity: 40%;
+}
+button{
+  background-color: lightgray;
+  border-left: 2px solid gray;
+  border-top: 2px solid gray;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+}
+button:hover{
+  opacity: 50%;
+}
+.nav-icons button{
+  border-radius: 25%;
+}
+
+/* CSS adjustment on the resume page to make content look like a sheet of paper */
+.resume-main{
+  max-width: 800px;
+  border-left: 2px solid ghostwhite;
+  border-top: 2px solid ghostwhite;
+  box-shadow: 5px 5px 5px darkgrey;
+  border-radius: 1%;
+}
+.logo{
+  margin: 0 auto;
+  display:block;
+}
+.nav-icons{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.9em;
+  border-left: 2px solid ghostwhite;
+  border-top: 2px solid ghostwhite;
+  box-shadow: 5px 5px 5px black;
+  margin-top: 70px;
+  margin-bottom: 100px;
+  border-radius: 20%;
+}
+
+/* CSS adjustment on icons on footer */
+.nav-icons .fa{
+  color: darkslategray;
+}
+
+.nav-icons .fa{
+  font-size: 4em;
+}
+
+.portfolio-images{
+  text-align: center;
+  margin: 0 auto;
+}
+.puppies-image{
+  padding: 30px;
+  border-bottom: 2px dotted black;
+}
+.animals-image{
+  padding: 30px;
+  border-bottom: 2px dotted black;
+}
+.grooveguitar-image{
+  padding: 30px;
+}
+.footer1000{
+  padding-top: 20px;
+  margin: 0 auto;
+  text-align: left;
+  max-width: 900px;
+  padding: 0px;
+  margin-top: 30px;
+}
+.footer-icons-heading{
+  font-size: 2.5em;
+}
+.footer-icons{
+  padding-top: 15px;
+  font-size: 1.3em;
+  line-height: 30px;
+}
+
+.footer-bottom{
+  color: white;
+  background-color: black;
+}
+
+
+.gallery .preview{
+    width:100%
+    height:auto;
+}
+
+.gallery .gallery-thumbnails img {
+    width:100px;
+    height:78px;
+    margin: 3px 10px 10px 0;
+    display: block;
+}
+
+.gallery .gallery-thumbnails img:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+.gallery .preview img#preview {
+    padding: 1px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto !important;
+    display: block !important;
+    float: right;
+    border: 3px solid grey;
+    position: absolute; right: 170px;
+}
+
+/* CSS adjustment for the game page on desktop */
+.mobile{
+  display:none;
+}
+.mobile-main{
+  display: none;
+}
+/* CSS adjustment on the resume title on page*/
+#resume h2{
+  color: black;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+
+/* CSS Adjustments for Tablets */
+@media only screen and (max-width: 1024px) {
+  h1{
+    font-size: 2em;
+  }
+  main{
+  max-width: 650px;
+  margin: 20px auto;
+  }
+  .mobile-main{
+  display: none;
+}
+
+  /*.desktop{
+    display:none;
+  }*/
+  .mobile{
+    display: block;
+    touch-action: manipulation;
+  }
+  .gallery .gallery-thumbnails img {
+    width:100px;
+    height:78px;
+    margin: 3px 10px 10px 0;
+    display: inline-block;
+    text-align: center;   
+  }
+  .gallery .preview img#preview {
+    padding: 1px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto !important;
+    display: block !important;
+    float: right;
+    border: 3px solid grey;
+    position: static;
+  }
+}
+
+/* CSS Adjustments for Smartphones */
+@media only screen and (max-width: 768px) {
+  h1{
+    font-size: 1.5em;
+  }
+  main{
+  max-width: 400px;
+  margin: 30px auto;
+  }
+  /*.desktop{
+    display:none;
+  }*/
+  .mobile-main{
+    display: block;
+  }
+  .dektop-main{
+    display: none;
+  }
+  .mobile{
+    display: block;
+    touch-action: manipulation;
+  }
+  .gallery .gallery-thumbnails img {
+    width:100px;
+    height:78px;
+    margin: 3px 10px 10px 0;
+    display: inline-block;
+    text-align: center;   
+  }
+  .gallery .preview img#preview {
+    padding: 1px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto !important;
+    display: block !important;
+    float: right;
+    border: 3px solid grey;
+    position: static;
+  }
+
+
+
+}
+
+

@@ -1,0 +1,131 @@
+@import 
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Rubik+Iso&display=swap');
+
+body{
+  font-family: 'Rubik Iso', sans-serif;
+  border-bottom: 10px black solid;
+  border-top: 10px black solid;
+  background-color: ghostwhite;
+  
+}
+h1{
+  text-align: center;
+  font-size: 2.5em;
+  background-color: burlywood;
+  margin: 0 auto;
+}
+main{
+  max-width: 1000px;
+  margin: 20px auto;
+}
+p{
+  font-size: 0.9em;
+}
+nav a:link{
+  color: black;
+}
+nav a:visited{
+  color: darkblue;
+}
+nav a:hover{
+  color:darkgreen;
+}
+nav a:active{
+  color: red;
+}
+nav{
+  background-color: wheat;
+  padding-top: 1px;
+  border-bottom: 1px;
+  font-weight: bold;
+
+}
+
+nav ul{
+  list-style-type: none;
+  text-align: center;
+}
+nav li{
+  display: inline;
+}
+nav a{
+  text-decoration: none;
+  padding-right: 10px;
+}
+footer{
+  border-top: 1px solid black;
+  padding: 10px;
+  background-color: wheat;
+}
+
+.col-sm-2{
+  text-align: center;
+  font-size: 3em;
+}
+
+.fa{
+  color: black;
+  font-size: 1.1em;
+  text-align: left;
+}
+.fa:hover{
+  color: blue;
+}
+
+.gallery .preview{
+    width:100%
+    height:auto;
+}
+
+.gallery .gallery-thumbnails img {
+    width:82px;
+    height:60px;
+    margin: 3px 10px 10px 0;
+}
+
+.gallery .gallery-thumbnails img:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+.gallery .preview img#preview {
+    padding: 1px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto !important;
+    display: block !important;
+}
+
+.home-hero{
+  background-image: url(images/otter.jpg);
+  height: 475px;
+  background-size: cover;
+  background-position: center;
+  color: #042837; 
+  padding: 10px 10px 10px 30px;
+}
+.footer-words{
+  text-align: left;
+}
+.footer-headlines{
+  text-align: left;
+  font-weight: bolder;
+}
+.copyright{
+  text-align: center;
+}
+
+/* CSS Adjustments for Tablets */
+@media only screen and (max-width: 1024px) {
+  h1{
+    font-size: 2em;
+}
+}
+/* CSS Adjustments for Smartphones */
+@media only screen and (max-width: 768px) {
+  h1{
+    font-size: 1.5em;
+  }
+}
+
+

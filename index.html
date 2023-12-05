@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="This is the home page of Chaivut Lee's portfolio website, created by Chaivut Lee, a student at Saint Paul College.">
+	<title>Chaivut Lee Portfolio::Chaivut Lee</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">	
+</head>
+<body>
+
+	<header>
+		<img src="images/logo3.png" alt="logo" height="50" width="250" class="img-fluid logo">
+	</header>
+
+
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+		    <li><a href="resume.html">Resume</a></li>
+		    <li><a href="game.html"	>Game</a></li>
+		    <li><a href="portfolio.html">Portfolio</a></li>
+	  	</ul>
+	</nav>
+
+	<main>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12">
+					<h2>About Me</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6">
+					<p>
+						My name is Chaivut Lee and I am currently studying Computer Programming at Saint Paul College in St. Paul, Minnesota. My planned graduation date is May 2025 with the Computer Programing AAS degree. I am mainly focusing on programming and web design. I made this website as a portfolio of my skills developing websites.<br>
+						I have taken the following classes at Saint Paul College:
+						<ul>
+							<li> Web Fundamentals, where I learned HTML and CSS </li>
+							<li>Computer Science and Information Systems</li>
+							<li>Computer Networking</li>	
+						</ul>
+
+						Next semester I will be taking Client Side Programming, Database Management Fundamentals, and Computing and Programming Concepts. I am also planning to take Java before I graduate.<br><br>
+
+						My hobbies include video gaming and fishing.
+					</p>
+				</div>
+				<div class="col-sm-6">
+					<div class="home-photo"> <!-- class used to style photo on home page-->
+						<img src="images/mississippi.jpg" height="100%" width="100%" alt="photo of Mississippi River in Saint Paul" class="home-photo">
+						<p>This Photo of Saint Paul, Minnesota is from <a href="https://pixabay.com/users/vladeymeer-161683/">vladeymeer from Pixabay</a></p>
+					</div>
+				</div>
+			</div>	
+			<div class="row nav-icons"> <!-- class used to style icons on navigation icons -->
+				<div class="dektop-main">
+					<div class="col-sm-12">
+						<div class="row">
+							<div class="col-sm-4">
+								<i class="fa fa-file-text-o" aria-hidden="true"></i>
+								<h2>Resume</h2>
+								<p>Check out my resume!</p>
+							</div>
+							<div class="col-sm-4">
+								<i class="fa fa-gamepad" aria-hidden="true"></i>
+								<h2>JavaScript Game</h2>
+								<p>Check out my custom game I made by using the W3 Schools JavaScript game.</p><br>
+							</div>
+							<div class="col-sm-4">
+								<i class="fa fa-address-card" aria-hidden="true"></i>
+								<h2>Portfolio</h2>
+								<p>Check out my portfolio, including websites as well as some special HTML/CSS projects.</p>				
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4">
+								<a href="resume.html" target="_blank">
+									<button>Learn More</button>
+								</a>
+							</div>
+							<div class="col-sm-4">
+								<a href="game.html" target="_blank">
+									<button>Learn More</button>
+								</a>
+							</div>
+							<div class="col-sm-4">
+								<a href="portfolio.html" target="_blank">
+									<button>Learn More</button>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mobile-main">
+					<div class="col-sm-12">
+						<div class="row">
+							<div class="col-sm-4">
+								<i class="fa fa-file-text-o" aria-hidden="true"></i>
+								<h2>Resume</h2>
+								<p>Check out my resume!</p>
+								<a href="resume.html" target="_blank">
+									<button>Learn More</button>
+								</a>
+								<br>
+								<br>
+							</div>
+							<div class="col-sm-4">
+								<i class="fa fa-gamepad" aria-hidden="true"></i>
+								<h2>JavaScript Game</h2>
+								<p>Check out my custom game I made by using the W3 Schools JavaScript game.</p>
+								<a href="game.html" target="_blank">
+									<button>Learn More</button>
+								</a>
+								<br>
+								<br>
+							</div>
+							<div class="col-sm-4">
+								<i class="fa fa-address-card" aria-hidden="true"></i>
+								<h2>Portfolio</h2>
+								<p>Check out my portfolio, including websites as well as some special HTML/CSS projects.</p>
+								<a href="portfolio.html" target="_blank">
+									<button>Learn More</button>
+								</a>				
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- div for photo gallery -->
+		<div class="row">
+			<div class="col-sm-12">
+				<h2>Animal photo gallery</h2>
+				<p>I made this photo gallery in JavaScript. I includes photos of some of my favorite animals I found on Pixabay.</p>
+		<div class="row">
+				<div class="col-sm-12">
+					<div class="gallery">
+					    <div class="preview">
+					        <img id="preview" src="images/jaguar.jpg" style="display:block;text-align:right" alt="jaguar"  height="700" width="700"/>
+					    </div>
+					    <div class="gallery-thumbnails" style="margin:0 auto;text-align:center;">
+					    	<img onclick="document.getElementById('preview').src=document.getElementById('img1').src" id="img1" src="images/jaguar.jpg" alt="jaguar" />
+					        <img onclick="document.getElementById('preview').src=document.getElementById('img2').src" id="img2" src="images/otter.jpg" alt="otter" />
+					        <img onclick="document.getElementById('preview').src= document.getElementById('img3').src;" id="img3" src="images/red-panda.jpg" alt="red-panda"  />
+					        <img onclick="document.getElementById('preview').src = document.getElementById('img4').src;" id="img4" src="images/wolverine.jpg" alt="wolverine" />
+					        <img onclick="document.getElementById('preview').src = document.getElementById('img5').src;" id="img5" src="images/sea-turtle.jpg" alt="sea-turtle" />
+					        <img onclick="document.getElementById('preview').src = document.getElementById('img6').src;" id="img6" src="images/wolf.jpg" alt="wolf" />
+					    </div>
+					    
+					</div>
+				</div>
+			</div>
+
+	</main>
+	
+	<footer>
+		<div class="container-fluid">
+			<div class="row footer1000"> <!-- used to apply design to the content of the footer but not to the footer itself. -->
+				<div class="col-sm-6">
+					<h3>Portfolio Website for Web Development Students</h3>
+					<p>This website is a portfolio website made for students at <b><a href="https://www.saintpaul.edu/" target="_blank">Saint Paul College</a></b>. It features the student Chaivut Lee, the author of this website.</p>
+					<p><i>The images used in this website are royalty free photos/artwork from <b><a href="https://pixabay.com/" target="_blank"> Pixabay</a></b>.</i></p>
+					
+				</div>
+				<div class="col-sm-6">
+					<h3 class="footer-icons-heading">Lets Connect!</h3> <!-- class used to style footer heading on icons side -->
+					<div class="footer-icons"> <!-- class used for styling icons in the footer. -->
+						<a href="https://www.linkedin.com/in/chaivutlee/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"> Connect on LinkedIn</i></a></li><br>
+						<a href="https://github.com/ChaivutLee" target="_blank"><i class="fa fa-github-square" aria-hidden="true"> Code on Github</i></a></li><br>
+						<a href="mailto:chaivutlee04@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"> Email</i></a></li>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom"> <!-- class is ued to give the bottom footer a different color. -->
+				<small>&copy; Chaivut Lee. All rights reserved.</small>	
+			</div>
+		</div>
+	
+
+	</footer>
+	<!--jQuery, Popper, and Bootstrap Javascript files-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

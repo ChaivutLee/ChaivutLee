@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="This is an example of a meta description. This will often show up in search results so it is impoartant to write a high quality description for each page of a website.">
+	<title>WEBSITE NAME::PAGE NAME</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">	
+</head>
+<body>
+
+	<header>
+		<h1><b>ANIMAL PHOTOGRAPHY</b></h1>
+	</header>
+
+	<nav>
+		<ul>
+			<!-- Only the first link will work as there are not yet any corresponding pages for the others -->
+			<li><a href="index.html">Home</a>&nbsp;</li>
+		    <li><a href="#">Photography</a>&nbsp;</li>
+		    <li><a href="#">About</a>&nbsp;</li>
+		    <li><a href="#">Contact</a>&nbsp;</li>
+	  	</ul>
+	</nav>
+
+	<main>
+		<div class="container fluid">
+			<div class="row">
+				<div class="col-sm-12">
+					<img class="img-fluid" src="images/hedgehog.jpg" width="1200" height="400" alt="hedgehog">
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-sm-2">
+					<a href="https://www.saintpaul.edu/"><i class="fa fa-picture-o" aria-hidden="true"></i></a>
+
+				</div>
+				<div class="col-sm-10">
+					<p>The website features photographs of animals from Pixabay.com. The key to animal photography is patience. It can take a long time to get the right lighting and the best view of the animal. When photographing animals, you do not have a lot of control...you need to wait for them.</p> 	
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="gallery">
+					    <div class="preview">
+					        <img id="preview" src="images/otter.jpg" style="display:block;margin:0 auto;" alt=""  height="600" width="800"/>
+					    </div>
+					    <div class="gallery-thumbnails" style="margin:0 auto;text-align:center">
+					        <img onclick="document.getElementById('preview').src=document.getElementById('img1').src" id="img1" src="images/bison.jpg" alt="" />
+					        <img onclick="document.getElementById('preview').src= document.getElementById('img2').src;" id="img2" src="images/deer.jpg" alt=""  />
+					        <img onclick="document.getElementById('preview').src = document.getElementById('img3').src;" id="img3" src="images/eagle.jpg" alt="" />
+					        <img onclick="document.getElementById('preview').src = document.getElementById('img4').src;" id="img4" src="images/fox.jpg" alt="" />
+					        <img onclick="document.getElementById('preview').src = document.getElementById('img5').src;" id="img5" src="images/frog.jpg" alt=""  />
+					        <img onclick="document.getElementById('preview').src = document.getElementById('img6').src;" id="img6" src="images/lizard.jpg" alt="" />
+					        <img onclick="document.getElementById('preview').src = document.getElementById('img7').src;" id="img7" src="images/rabbit.jpg" alt="" />
+					        <img onclick="document.getElementById('preview').src = document.getElementById('img8').src;" id="img8" src="images/sea-turtle.jpg" alt="" />
+					        <img onclick="document.getElementById('preview').src = document.getElementById('img9').src;" id="img9" src="images/sheep.jpg" alt="" />
+					        <img onclick="document.getElementById('preview').src = document.getElementById('img10').src;" id="img10" src="images/spider.jpg" alt="" />
+					    </div>
+					</div>
+				</div>
+			</div>
+		
+	</main>
+	
+	<footer>
+		<div class="container fluid">
+			<div class="row">
+				<div class="col-sm-6">
+					<h3 class="footer-headlines">Web Design Exercise</h3>
+					<p class="footer-words">Animal Photography is a website exercise on image galleries available on WebDevStudents.com. The images are royalty-free photos from pixabay.com. JavaScript was used to make the photo gallery, and Bootstrap columns for responsive layout.</p>
+				</div>
+				<div class="col-sm-6">
+					<h3 class="footer-headlines">Connect with Animal Photograpghy!</h3>
+					<ul>
+						<li><a href="https://www.saintpaul.edu/"><i class="fa fa-facebook-official" aria-hidden="true"> Facebook</i></a></li>
+						<li><a href="https://www.saintpaul.edu/"><i class="fa fa-twitter-square" aria-hidden="true"> Twitter</i></a></li>
+						<li><a href="https://www.saintpaul.edu/"><i class="fa fa-phone-square" aria-hidden="true"> Call or Text</i></a></li>
+						<li><a href="https://www.saintpaul.edu/"><i class="fa fa-envelope" aria-hidden="true"> Email</i></a></li>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<small>&copy; Chaivut Lee. All rights reserved.</small>
+		</div>
+	</footer>
+	<!--jQuery, Popper, and Bootstrap Javascript files-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
